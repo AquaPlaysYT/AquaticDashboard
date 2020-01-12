@@ -1,0 +1,22 @@
+@import url("Discord-FortniteBot/ws/public/css/CeraPRO-Regular.ttf");
+
+body {
+    background-color: rgb(90, 90, 90)
+}
+
+p, h1, h2, h3, h4, h5, h6, a, table, tr, td, th, li {
+    font-family: 'CeraPRO', sans-serif;
+    color: white;
+    align-content: center;
+    align-items: center;
+    vertical-align: text-top;
+}
+
+p2 {
+    font-size: 20px;
+    font-family: 'CeraPRO', sans-serif;
+    color: white;
+    align-content: center;
+    align-items: center;
+    vertical-align: text-top;
+}
