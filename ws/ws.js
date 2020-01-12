@@ -58,17 +58,23 @@ class WebSocket {
      */
 
     checkToken(_token) {
-        return (_token == this.token)
+        return (_token == "aquatictestc1")
     }
     
 
     registerRoots() {
         this.app.get('/', (req, res) => {
-           res.render('login', { title: "Login Please!" })
-            return
-        
+            var _token = req.query.token
+            if (!this.checkToken(_token)) {
+                res.render('downtime', { title: "Error" })
+                return
+            }
+            
+            res.render('login', { 
+                title: "Welcome", 
+                token: _token, 
+            })
         })
-
         this.app.post('/guest', (req, res) => {               
             res.render('community', { title: "Welcome" })
             console.log("Logged in as guest.")
