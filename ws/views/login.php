@@ -50,10 +50,18 @@ include('database_connection.php');
 		h3 {
 			text-align: center;
 		}
+		.bg {
+	   		background-image: url("https://cdn2.unrealengine.com/Fortnite%2Ffriend-invite%2Fbkgrd-1920x1080-41052fa8464fac09fbba2eb60254641b8208e55d.jpg");
+	    	height: 100%;
+			width: 100%:
+			background-position: center;
+ 			background-repeat: no-repeat;
+ 		    background-size: cover;
+        }
 		</style>
 		<script src="/ws/views/login.js"></script>
 	</head>
-	<body background="https://cdn2.unrealengine.com/Fortnite%2Ffriend-invite%2Fbkgrd-1920x1080-41052fa8464fac09fbba2eb60254641b8208e55d.jpg">
+	<body class="bg"> 
 		<div class="login-form">
 			<h1>Aquatic Development Team</h1>
 			<form action="auth" method="POST">
