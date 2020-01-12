@@ -8,6 +8,5 @@ var phpExpress = require('php-express')({
 var client = new Client()
 
 var ws = new WS(process.env.WEBTOKEN, process.env.PORT, client)
-herokuu
 
 console.log("Created By Aquatic Development Team (https://aquaticdevelopment.xyz)")
