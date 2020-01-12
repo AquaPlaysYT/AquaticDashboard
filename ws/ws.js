@@ -58,7 +58,7 @@ class WebSocket {
      */
 
     checkToken(_token) {
-        return (_token == "aquatictestc1")
+        return (_token == "aquatictestc4c")
     }
     
 
